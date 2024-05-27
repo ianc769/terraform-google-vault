@@ -292,6 +292,8 @@ service stackdriver-agent restart
 #########################################
 ##          user_startup_script        ##
 #########################################
+# shellcheck disable=SC2154
+# This is a Terraform Template Variable.
 ${user_startup_script}
 
 # Signal this script has run
